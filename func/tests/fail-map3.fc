@@ -1,0 +1,13 @@
+int add_one(int a)
+{
+  return a + 1;
+}
+
+int main()
+{
+  int arr;
+
+  map(add_one, 3, arr); /* Error: last argument must be an array */
+
+  return 0;
+}

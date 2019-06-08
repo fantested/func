@@ -1,0 +1,7 @@
+int main()
+{
+  func<int(float)> tmp;
+  tmp = (float x) => int { return x; }; /* Error: invalid return type */
+  print(tmp(1.0));
+  return 0;
+}

@@ -1,0 +1,14 @@
+int main()
+{
+  func<int(int)> square;
+  func<float(int, float)> snd;
+  int a;
+
+  square = (int x) => int { return x * x; };
+  print(square(2));
+
+  snd = (int x, float y) => float { return y; };
+  printf(snd(1, 2.5));
+
+  return 0;
+}

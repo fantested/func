@@ -1,0 +1,7 @@
+int main()
+{
+  func<int(int, int)> tmp;
+  tmp = (int x) => int { return x; }; /* Error: args mismatch */
+  print(tmp(1));
+  return 0;
+}

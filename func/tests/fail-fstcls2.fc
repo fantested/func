@@ -1,0 +1,7 @@
+int main()
+{
+  func<int(int, int)> tmp;
+  tmp = (int x, int y) => float { return 1.0; }; /* Error: return type mismatch */
+  print(tmp(1, 2));
+  return 0;
+}

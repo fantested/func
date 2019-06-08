@@ -1,0 +1,11 @@
+int main()
+{
+  int[] arr;
+  int f;
+
+  arr = [76, 2, 0];
+  f = 5;
+  reduce(f, 3, arr); /* Error: first argument must be a function */
+
+  return 0;
+}

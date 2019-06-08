@@ -1,0 +1,31 @@
+int[] map(func<int(int)>f, int length, int[] arr)
+{
+  int[] narr;
+  int i;
+
+  narr = new int[length];
+
+  for (i = 0; i < length; i = i + 1)
+  {
+      narr[i] = f(arr[i]);
+  }
+
+  return narr;
+}
+
+int reduce(func<int(int, int)> f, int length, int[] arr)
+{
+  int i;
+  int result;
+
+  if (length <= 0)
+    return 0;
+
+  result = arr[0];
+  for (i = 1; i < length; i = i + 1)
+  {
+      result = f(result, arr[i]);
+  }
+
+  return result;
+}

@@ -1,0 +1,10 @@
+int reduce(int a, int b) /* Error: reduce is a reserved keyword */
+{
+  return a + b;
+}
+
+int main()
+{
+  print(reduce(3, 5));
+  return 0;
+}

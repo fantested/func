@@ -1,0 +1,5 @@
+Fatal error: exception Failure("illegal assignment func <int(int, int)> = func <float(int, int)> in tmp = float _anon1(x, y)
+{
+return 1.0;
+}
+")

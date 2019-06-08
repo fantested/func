@@ -1,0 +1,17 @@
+int sum(int a, int b)
+{
+  return a + b;
+}
+
+int main()
+{
+  int[] arr;
+  int result;
+
+  arr = [4, 7, 10];
+
+  result = reduce(sum, 3, arr);
+  print(result);
+
+  return 0;
+}

@@ -1,0 +1,12 @@
+int sum(int a, int b)
+{
+  return a + b;
+}
+
+int main()
+{
+  int result;
+  result = 5 |> sum(10) |> 5+4 |; /* Error: all items, except the first item, need to be a function call */
+
+  return 0;
+}

@@ -1,0 +1,5 @@
+_build
+.vscode
+printbig.o
+testall.log
+func.native

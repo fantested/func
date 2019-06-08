@@ -1,0 +1,12 @@
+int foo()
+{
+  int[] a;
+  a = [1, 2, 3];
+  return a[2];
+}
+
+int main()
+{
+  int x;
+  x = a[2]; /* Fail: array is out of scope */
+}

@@ -1,0 +1,13 @@
+int sum(int a, int b)
+{
+  return a + b;
+}
+
+int main()
+{
+  int result;
+  int a;
+  result = (a = 5) |> sum(10) |; /* Error: assignment is invalid as a first expression for pipe */
+
+  return 0;
+}

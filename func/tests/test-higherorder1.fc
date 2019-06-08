@@ -1,0 +1,14 @@
+int cubic(func<int(int)> square, int x)
+{
+  return square(x) * x;
+}
+
+int main()
+{
+  func<int(int)> square;
+
+  square = (int x) => int { return x * x; };
+  print(cubic(square, 2));
+
+  return 0;
+}

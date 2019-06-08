@@ -1,0 +1,9 @@
+int main()
+{
+  func<int(int, int)> subtract;
+
+  subtract = (int x, int y) => int { return x - y; };
+  print(subtract(3, 2));
+
+  return 0;
+}

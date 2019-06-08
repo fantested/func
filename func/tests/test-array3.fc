@@ -1,0 +1,17 @@
+int main()
+{
+  int[] a;
+  int x;
+  int y;
+  int z;
+  a = [1, 2, 3];
+  x = a[0];
+  y = 5 + a[1];
+  z = y + a[1] + a[2];
+
+  print(x);
+  print(y);
+  print(z);
+
+  return 0;
+}

@@ -1,0 +1,21 @@
+int square(int a)
+{
+  return a * a;
+}
+
+int sum(int a, int b)
+{
+  return a + b;
+}
+
+int main()
+{
+  int[] numbers;
+  int result;
+
+  numbers = [1, 2, 3, 4, 5];
+  result = numbers |> map(square, 5) |> reduce(sum, 5) |;
+  print(result);
+
+  return 0;
+}

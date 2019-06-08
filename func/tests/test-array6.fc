@@ -1,0 +1,31 @@
+int[] square(int[] arr, int length)
+{
+  int[] narr;
+  int i;
+  
+  narr = new int[length];
+
+  for(i = 0; i < length; i = i + 1)
+  {
+    narr[i] = arr[i] * arr[i];
+  }
+
+  return narr;
+}
+
+int main()
+{
+  int[3] arr;
+  int[3] narr;
+  int i;
+
+  arr = [1, 2, 3];
+  narr = square(arr, 3);
+
+  for(i = 0; i < 3; i = i + 1)
+  {
+    print(narr[i]);
+  }
+  
+  return 0;
+}

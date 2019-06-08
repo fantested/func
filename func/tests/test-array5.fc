@@ -1,0 +1,26 @@
+void square(int[] arr, int length)
+{
+  int i;
+  
+  for(i = 0; i < length; i = i + 1)
+  {
+    arr[i] = arr[i] * arr[i];
+  }
+}
+
+int main()
+{
+  int[] arr;
+  int i;
+
+  arr = [1, 2, 3];
+
+  square(arr, 3);
+
+  for(i = 0; i < 3; i = i + 1)
+  {
+    print(arr[i]);
+  }
+  
+  return 0;
+}

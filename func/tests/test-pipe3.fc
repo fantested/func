@@ -1,0 +1,29 @@
+int[] add_one(int length, int[] arr)
+{
+  int[] narr;
+  int i;
+
+  narr = new int[length];
+
+  for(i = 0; i < length; i = i + 1)
+  {
+    narr[i] = arr[i] + 1;
+  }
+
+  return narr;
+}
+
+int main()
+{
+  int[3] result;
+  int i;
+
+  result = [1, 2, 3] |> add_one(3) |> add_one(3) |;
+
+  for(i = 0; i < 3; i = i + 1)
+  {
+    print(result[i]);
+  }
+  
+  return 0;
+}

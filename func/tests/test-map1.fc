@@ -1,0 +1,22 @@
+int add_two(int a)
+{
+  return a + 2;
+}
+
+int main()
+{
+  int[] a;
+  int[] result;
+  int i;
+
+  a = [4, 7, 10];
+
+  result = map(add_two, 3, a);
+
+  for (i = 0; i < 3; i = i + 1)
+  {
+    print(result[i]);
+  }
+
+  return 0;
+}

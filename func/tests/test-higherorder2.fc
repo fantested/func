@@ -1,0 +1,27 @@
+func<void()> greet(bool formal)
+{
+  func<void()> greet_formal;
+  func<void()> greet_casual;
+
+  greet_formal = () => void { prints("How are you?"); };
+  greet_casual = () => void { prints("What's up?"); };
+
+  if (formal)
+  {
+    return greet_formal;
+  }
+
+  return greet_casual;
+}
+
+int main()
+{
+  bool formal;
+  func<void()> greet_casual;
+
+  formal = false;
+  greet_casual = greet(formal);
+  greet_casual();
+  
+  return 0;
+}

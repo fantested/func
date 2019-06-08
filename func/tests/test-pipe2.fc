@@ -1,0 +1,12 @@
+int sum(int a, int b, int c)
+{
+  return a + b + c;
+}
+
+int main()
+{
+  int result;
+  result = 5 |> sum(10, 6) |;
+  print(result);
+  return 0;
+}

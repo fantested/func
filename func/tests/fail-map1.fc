@@ -1,0 +1,10 @@
+int map(int a, int b) /* Error: map is a reserved keyword */
+{
+  return a + b;
+}
+
+int main()
+{
+  print(map(3, 5));
+  return 0;
+}

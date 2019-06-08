@@ -1,0 +1,12 @@
+int sum(int a, int b)
+{
+  return a + b;
+}
+
+int main()
+{
+  int result;
+  result = 5 |> sum(10) |> sum(20) |> sum(30) |;
+  print(result);
+  return 0;
+}

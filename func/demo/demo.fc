@@ -1,0 +1,61 @@
+int twice(func<int(int)> f, int x)
+{
+    return f(f(x));
+}
+
+func<void()> greet(bool formal)
+{
+    func<void()> greet_formal;
+    func<void()> greet_casual;
+
+    greet_formal = () => void { prints("How are you?"); };
+    greet_casual = () => void { prints("What's up?"); };
+
+    if (formal)
+    {
+        return greet_formal;
+    }
+
+    return greet_casual;
+}
+
+int main()
+{
+    /* Declarations */
+    int r1;
+    int r2;
+    int r3;
+    int len;
+    int[5] numbers;
+    int[5] squared_numbers;
+
+    /* First-class functions */
+    func<int(int)> square;
+    func<int(int, int)> sum;
+    func<void()> greet_casual;
+    
+    /* Array */
+    len = 5;
+    numbers = [1, 2, 3, 4, 5];
+    
+    /* Anonymous functions */
+    square = (int a) => int { return a * a; };
+    sum = (int a, int b) => int { return a + b; };
+    
+    /* Higher-order functions */
+    r1 = twice(square, 2);
+    print(r1); /* 16 */
+    greet_casual = greet(false);
+    greet_casual(); /* What's up? */
+    
+    /* Map & reduce */
+    squared_numbers = map(square, len, numbers);
+    r2 = reduce(sum, len, squared_numbers);
+    print(r2); /* 55 */
+    
+    /* Piping */
+    r3 = numbers |> map(square, len) |> reduce(sum, len) |;
+    print(r3); /* 55 */
+
+    return 0;
+}
